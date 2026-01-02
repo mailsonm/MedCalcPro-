@@ -37,7 +37,7 @@ export const InputGroup: React.FC<InputGroupProps> = ({
           step="any"
           value={value}
           onChange={(e) => onChange(e.target.value)}
-          className={`flex-1 block w-full rounded-l-md border-slate-300 focus:ring-medical-500 focus:border-medical-500 min-w-0 sm:text-sm p-3 border ${error ? 'border-red-300 bg-red-50' : ''}`}
+          className={`flex-1 block w-full rounded-l-md border-slate-300 focus:ring-medical-500 focus:border-medical-500 min-w-0 sm:text-sm p-3 border bg-white text-slate-900 placeholder-slate-400 ${error ? 'border-red-300 bg-red-50' : ''}`}
           placeholder={placeholder}
         />
         
@@ -45,7 +45,7 @@ export const InputGroup: React.FC<InputGroupProps> = ({
           <select
             value={selectedUnit}
             onChange={(e) => onUnitChange(e.target.value)}
-            className="inline-flex items-center px-3 rounded-r-md border border-l-0 border-slate-300 bg-slate-50 text-slate-500 sm:text-sm focus:ring-medical-500 focus:border-medical-500"
+            className="inline-flex items-center px-3 rounded-r-md border border-l-0 border-slate-300 bg-slate-50 text-slate-700 sm:text-sm focus:ring-medical-500 focus:border-medical-500"
           >
             {unitOptions.map((opt) => (
               <option key={opt} value={opt}>

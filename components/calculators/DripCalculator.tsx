@@ -64,7 +64,7 @@ export const DripCalculator: React.FC = () => {
               <select
                 value={dropFactor}
                 onChange={(e) => setDropFactor(e.target.value as '20' | '60')}
-                className="block w-full rounded-md border-slate-300 shadow-sm focus:border-medical-500 focus:ring-medical-500 sm:text-sm p-3 border"
+                className="block w-full rounded-md border-slate-300 shadow-sm focus:border-medical-500 focus:ring-medical-500 sm:text-sm p-3 border bg-white text-slate-900"
               >
                 <option value="20">Macrogotas (20 gts/ml)</option>
                 <option value="60">Microgotas (60 mgts/ml)</option>
