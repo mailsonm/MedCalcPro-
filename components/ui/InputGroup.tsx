@@ -25,16 +25,13 @@ export const InputGroup: React.FC<InputGroupProps> = ({
   helpText,
   error
 }) => {
-  const id = React.useId();
-
   return (
     <div className="mb-4">
-      <label htmlFor={id} className="block text-sm font-medium text-slate-700 mb-1">
+      <label className="block text-sm font-medium text-slate-700 mb-1">
         {label}
       </label>
       <div className="flex rounded-md shadow-sm">
         <input
-          id={id}
           type="number"
           min="0"
           step="any"
@@ -43,7 +40,7 @@ export const InputGroup: React.FC<InputGroupProps> = ({
           className={`flex-1 block w-full rounded-l-md border-slate-300 focus:ring-medical-500 focus:border-medical-500 min-w-0 sm:text-sm p-3 border bg-white text-slate-900 placeholder-slate-400 ${error ? 'border-red-300 bg-red-50' : ''}`}
           placeholder={placeholder}
         />
-
+        
         {unitOptions && onUnitChange ? (
           <select
             value={selectedUnit}

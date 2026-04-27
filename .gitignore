@@ -8,24 +8,9 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-# Production
 dist
 dist-ssr
-
-# Environment
-.env
-.env.*
-!.env.example
 *.local
-
-# Tests
-coverage/
-
-# Tools & Caches
-.cache
-.vite
-.eslintcache
-.turbo
 
 # Editor directories and files
 .vscode/*
